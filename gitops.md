@@ -56,7 +56,7 @@ gcloud beta container fleet config-management status
 **Upgrade Config Sync version:**
 To upgrade Config Sync to a newer version on your cluster, use the following command:
 ```sh
-gcloud container fleet config-management update --membership=<CLUSTER_NAME> --version=<NEW_VERSION>
+gcloud beta container fleet config-management update --membership=<CLUSTER_NAME> --version=<NEW_VERSION>
 ```
 Replace `<CLUSTER_NAME>` with your cluster name and `<NEW_VERSION>` with the desired Config Sync version. For more details, includeing
 the latest versions, see the official GCP documentation: https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/release-notes
