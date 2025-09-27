@@ -1,0 +1,7 @@
+prompt = """
+Checks the status of Config Sync in the Kubernetes cluster.
+
+Check RootSync and RepoSync status:
+!{kubectl get rootsyncs --all-namespaces -oyaml}
+!{kubectl get reposyncs --all-namespaces -oyaml}
+"""
