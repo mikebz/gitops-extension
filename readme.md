@@ -9,13 +9,24 @@ This project provides context, documentation, and best practices for implementin
 - ArgoCD and FluxCD usage notes
 - Best practices for managing infrastructure and application deployments
 
-## Getting Started
-1. Clone this repository:
+
+## Local Installation (Gemini CLI Extension)
+To install and use this extension locally with `gemini-cli`, follow these steps:
+
+1. Clone this repository (if not already done):
 	```sh
 	git clone https://github.com/mikebz/gitops-extension.git
 	```
-2. Review the context files:
-	- link the extension locally.
+2. Link the extension locally using Gemini CLI:
+	```sh
+	gemini extension link /path/to/gitops-extension
+	```
+	Replace `/path/to/gitops-extension` with the actual path to your extension file.
+3. Verify the extension is linked:
+	```sh
+	gemini extension list
+	```
+4. For more details, see the official [Gemini CLI Extension Guide](https://github.com/google-gemini/gemini-cli/blob/main/docs/extension.md).
 
 ## Supported Tools
 - **kubectl**: Command-line tool for managing Kubernetes resources
