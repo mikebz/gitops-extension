@@ -1,3 +1,4 @@
+description = "Static check for configuration errors"
 prompt = """
 Before you commit a config to the source of truth, use the `nomos vet` command to check the syntax and validity of the configs in your source of truth.
 

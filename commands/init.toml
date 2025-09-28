@@ -1,3 +1,4 @@
+description = "Initialize a hierarchical source of truth."
 prompt = """
 You can initialize a structure for your cluster configuration.  The output will be generated in a {{path}}
 

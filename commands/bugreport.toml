@@ -1,3 +1,4 @@
+description = "Create a bug report for Config Sync."
 prompt = """
 If you have a problem with Config Sync that requires help from Google Cloud support, you can provide them with valuable debugging information by using the `nomos bugreport` command. You can use this command for a single source of truth and multiple repositories.
 

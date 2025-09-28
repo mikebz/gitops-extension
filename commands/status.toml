@@ -1,3 +1,4 @@
+description = "Check Config Sync status across clusters"
 prompt = """
 You can monitor the status of Config Sync on all enrolled clusters by using the `nomos status` command. For each cluster, `nomos status` reports 
 the hash of the commit that was last applied to the cluster and any errors that occurred while trying to apply any recent changes.

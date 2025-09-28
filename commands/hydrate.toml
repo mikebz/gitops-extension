@@ -1,3 +1,4 @@
+description = "Run helm and kustomize and output the final configuration as it would be on the cluster"
 prompt = """
 You can use the `nomos hydrate` command to view the combined contents of your configuration from {{path}} into an {{output}} directory.
 

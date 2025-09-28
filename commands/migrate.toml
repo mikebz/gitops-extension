@@ -1,3 +1,4 @@
+description = "Migrate to the current APIs, if the cluster is behind."
 prompt = """
 You can run the `nomos migrate` command to migrate from your ConfigManagement object to a RootSync object to enable the `RootSync` and `RepoSync` APIs.
 
