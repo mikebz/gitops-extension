@@ -1,11 +1,7 @@
 prompt = """
-If you have a problem with Config Sync that requires help from Google Cloud support, 
-you can provide them with valuable debugging information by using the `nomos bugreport` 
-command. You can use this command for a single source of truth and multiple repositories.
+If you have a problem with Config Sync that requires help from Google Cloud support, you can provide them with valuable debugging information by using the `nomos bugreport` command. You can use this command for a single source of truth and multiple repositories.
 
-This command generates a timestamped zip file with information on the Kubernetes cluster 
-set in your `kubectl` context. The file also contains logs from Config Sync Pods. 
-It does not contain information from the resources synced with Config Sync.
+This command generates a timestamped zip file with information on the Kubernetes cluster set in your `kubectl` context. The file also contains logs from Config Sync Pods. It does not contain information from the resources synced with Config Sync.
 
 Usage:
 !{nomos bugreport}
