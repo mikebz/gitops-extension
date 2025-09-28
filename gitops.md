@@ -38,19 +38,64 @@ If using Google Cloud Platform (GCP), you can manage Config Sync with `gcloud`:
 #### Operations
 
 **Install Config Sync:**
+
 ```sh
 gcloud container fleet config-management enable
 ```
 
-**Configure a Git repository:**
+Create a configuration YAML file like this:
+
+```yaml
+applySpecVersion: 1
+spec:
+  configSync:
+    enabled: true
+```
+
+Apply the configuration instructions
 ```sh
 gcloud beta container fleet config-management apply --membership=<CLUSTER_NAME> \
   --config=<CONFIG_YAML_PATH> --project=<PROJECT_ID>
 ```
 
+**Install Config Sync CLI**
+`nomos` command line utility helps you interact with a cluster that
+has config sync installed.  To find out more about `nomos` see:
+https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/how-to/nomos-command
+
+```sh
+gcloud components install nomos
+```
+
+**Configure a Git repository:**
+
+Create a RootSync (or RepoSync configuration file):
+
+```
+# root-sync.yaml
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: rs1
+  namespace: config-management-system
+spec:
+  sourceType: git
+  sourceFormat: unstructured
+  git:
+    repo: <REPOSITORY>
+    revision: HEAD
+    branch: main
+    dir: <ROOT_DIRECTORY>
+    auth: none
+```
+
+For more information about authentication see:
+https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/how-to/grant-access-git
+
+
 **Check Config Sync status:**
 ```sh
-gcloud beta container fleet config-management status
+nomos status
 ```
 
 **Upgrade Config Sync version:**
