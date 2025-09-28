@@ -1,11 +1,10 @@
 prompt = """
-You can organize your source of truth arbitrarily if you are using an 
-unstructured source of truth. If you are using a hierarchical source of truth, 
-you need to run the `nomos init` command to initialize a hierarchical directory.
+You can initialize a structure for your cluster configuration.  The output will be generated in a {{path}}
 
-This creates the basic directory structure of a hierarchical source of truth, 
-including the `system/`, `cluster/`, and `namespaces/` directories.
+You can organize your source of truth arbitrarily if you are using an unstructured source of truth. If you are using a hierarchical source of truth, you need to run the `nomos init` command to initialize a hierarchical directory.
+
+This creates the basic directory structure of a hierarchical source of truth, including the `system/`, `cluster/`, and `namespaces/` directories.
 
 Usage:
-!{nomos init}
+!{nomos init --path {{path}} }
 """
