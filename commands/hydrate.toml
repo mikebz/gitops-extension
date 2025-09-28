@@ -1,15 +1,10 @@
 prompt = """
-You can use the `nomos hydrate` command to view the combined contents of your 
-source of truth on each enrolled cluster.
+You can use the `nomos hydrate` command to view the combined contents of your configuration from {{path}} into an {{output}} directory.
 
-If you run `nomos hydrate` with no options, it creates a `compiled/` directory 
-in the current working directory. Within that directory, a subdirectory is 
-created for each enrolled cluster, with the fully resolved configs the 
-Operator would apply to the cluster.
+If you run `nomos hydrate` with no options, it creates a `compiled/` directory in the current working directory. Within that directory, a subdirectory is created for each enrolled cluster, with the fully resolved configs the Operator would apply to the cluster.
 
-This command can also convert a hierarchical source of truth to one or more 
-unstructured sources of truth, using the content in the `compiled/` directory.
+This command can also convert a hierarchical source of truth to one or more unstructured sources of truth, using the content in the `compiled/` directory.
 
 Usage:
-!{nomos hydrate}
+!{nomos hydrate --path {{path}} --output {{output}} }
 """
