@@ -1,0 +1,10 @@
+prompt = """
+You can run the `nomos migrate` command to migrate from your ConfigManagement object to a RootSync object to enable the `RootSync` and `RepoSync` APIs.
+
+`nomos migrate` supports dry-run for previewing the migration process.
+
+`nomos migrate` modifies your ConfigManagement object on the cluster directly. To avoid changes made through `nomos migrate` being reverted, ensure the ConfigManagement object isn't checked into your source of truth.
+
+Usage:
+!{nomos migrate}
+"""

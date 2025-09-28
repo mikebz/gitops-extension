@@ -1,7 +1,13 @@
 prompt = """
-Checks the status of Config Sync in the Kubernetes cluster.
+You can monitor the status of Config Sync on all enrolled clusters 
+by using the `nomos status` command. For each cluster, `nomos status` 
+reports the hash of the commit that was last applied to the cluster 
+and any errors that occurred while trying to apply any recent changes.
 
-Check RootSync and RepoSync status:
-!{kubectl get rootsyncs --all-namespaces -oyaml}
-!{kubectl get reposyncs --all-namespaces -oyaml}
+You can also use `nomos status` to check if the resources managed by 
+Config Sync are ready. `nomos status` reports the status for each individual 
+resource in the `STATUS` column of the `Managed resources` section of the output.
+
+Usage:
+!{nomos status}
 """
