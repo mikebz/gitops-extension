@@ -1,10 +1,8 @@
 prompt = """
-Before you commit a config to the source of truth, use the `nomos vet` command 
-to check the syntax and validity of the configs in your source of truth.
+Before you commit a config to the source of truth, use the `nomos vet` command to check the syntax and validity of the configs in your source of truth.
 
-If syntax errors are found, the `nomos vet` command exits with a non-zero status 
-and logs error messages to `STDERR`.
+If syntax errors are found, the `nomos vet` command exits with a non-zero status and logs error messages to `STDERR`.
 
 Usage:
-!{nomos vet}
+!{nomos vet {{args}}}
 """
