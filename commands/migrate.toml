@@ -5,6 +5,15 @@ You can run the `nomos migrate` command to migrate from your ConfigManagement ob
 
 `nomos migrate` modifies your ConfigManagement object on the cluster directly. To avoid changes made through `nomos migrate` being reverted, ensure the ConfigManagement object isn't checked into your source of truth.
 
+Arguments:
+  --connect-timeout duration: Timeout for connecting to each cluster.
+  --contexts strings: Comma-separated list of contexts.
+  --dry-run: If enabled, only prints the migration output.
+  --remove-configmanagement: If enabled, removes the ConfigManagement operator and CRD.
+  --wait-timeout duration: Timeout for waiting for condition to be true.
+
 Usage:
 !{nomos migrate}
+
+
 """
