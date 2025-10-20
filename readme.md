@@ -71,5 +71,8 @@ See `gitops.md` for detailed operational commands, including:
 - [ArgoCD Documentation](https://argo-cd.readthedocs.io/)
 - [FluxCD Documentation](https://fluxcd.io/)
 
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
 For more details, see the context files in this repository or reach out to the project owner.
