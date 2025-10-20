@@ -1,13 +1,30 @@
 
 # GitOps Extension
 
-This project provides context, documentation, and best practices for implementing GitOps workflows with Kubernetes. It covers key tools, operational commands, and troubleshooting steps for popular GitOps solutions including kubectl, kustomize, Config Sync (GCP), ArgoCD, and FluxCD.
+This project provides a Gemini CLI extension that helps someone work on GitOps workflows. 
+It covers key tools, operational commands, and troubleshooting steps for popular GitOps 
+tools Config Sync (GCP), ArgoCD, and FluxCD.
 
 ## Features
-- Overview of GitOps methodology and benefits
-- GCP Config Sync setup, upgrade, and troubleshooting commands
-- ArgoCD and FluxCD usage notes
-- Best practices for managing infrastructure and application deployments
+1. Generating a bugreport
+1. Initializing a repository using the `nomos` command
+1. Hydrating a repository using `nomos` command.
+1. Migration of the clusters and repositories.
+1. Getting the status of GitOps pipelines that use Config Sync.
+1. Ability to vet the current configuration.
+1. Ability to utilize `gcloud` to manage the Config Sync instances.
+
+## Exxtension Impact
+
+Here is a side by side test of Gemini CLI operating with this extension and without. You can see
+that when the extension is present LLM is more successful at issuing the right commands
+to upgrade Config Sync clusters.
+
+Upgrade when the extension is installed:
+![with gitops extension](docs/with-gitops-extension.png "Upgrade with GitOps Extension")
+
+Same prompt without the extension installed
+![no gitops extension](docs/no-gitops-extension.png "No GitOps extension")
 
 
 ## Local Installation (Gemini CLI Extension)
